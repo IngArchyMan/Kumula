@@ -4,7 +4,7 @@
             <p class="banner-text">{{bannerText}}</p>
         </div>
         <span class="icon-action" @click="changeVisibility">
-            <i class="fas fa-window-close"></i>
+            <i class="fas fa-times"></i>
         </span>        
     </div>
 </template>
@@ -37,23 +37,33 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
+    z-index: 100;
 }
 .promotion-banner.hide-banner{
     display: none;
     visibility: hidden;
 }
 .text-content{
-    width: 90%;
+    width: calc(100% - 32px);
     overflow: hidden;
 }
 .text-content .banner-text{
     display: block; 
-    width: 100%;
+    width: 1200px;
     transform: translateX(100%);
-  animation: move 20s linear infinite;
+    animation: move 20s linear infinite;
+    margin: 0;
 }
 .icon-action{
     cursor: pointer;
-    width: 10%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+}
+.icon-action i{
+    font-size: 18px;    
+    display: block;
+    margin: auto;
 }
 </style>

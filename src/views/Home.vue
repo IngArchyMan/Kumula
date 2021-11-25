@@ -4,30 +4,59 @@
     <swiper class="home-swiper"
       :modules="modules"
       :slides-per-view="1"
-      :space-between="0"
-      navigation
+      :space-between="10"
+      :navigation="true"
+      :loop="true"
+      autoplay
       @swiper="onSwiper"
       @slideChange="onSlideChange"
     >
-      <swiper-slide>
+      <swiper-slide v-slot="{ isActive }">
         <div class="content-slide">
           <div class="bg-slide-overlay"></div>
           <figure>
             <img src="@/assets/img/slide-1.jpg" alt="">
           </figure>
-          <h1 class="title-slide">Title Slide</h1>
+          <h1 class="title-slide" :class="{'appear': isActive}">Title Slide</h1>
         </div>
       </swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
+      <swiper-slide v-slot="{ isActive }" data-swiper-autoplay="2000">
+        <div class="content-slide">
+          <div class="bg-slide-overlay"></div>
+          <figure>
+            <img src="@/assets/img/slide-2.jpg" alt="">
+          </figure>
+          <h1 class="title-slide" :class="{'appear': isActive}">Title Slide</h1>
+        </div>
+      </swiper-slide>
+      <swiper-slide v-slot="{ isActive }">
+        <div class="content-slide">
+          <div class="bg-slide-overlay"></div>
+          <figure>
+            <img src="@/assets/img/slide-3.jpg" alt="">
+          </figure>
+          <h1 class="title-slide" :class="{'appear': isActive}">Title Slide</h1>
+        </div>
+      </swiper-slide>
+      <swiper-slide v-slot="{ isActive }">
+        <div class="content-slide">
+          <div class="bg-slide-overlay"></div>
+          <figure>
+            <img src="@/assets/img/slide-4.jpg" alt="">
+          </figure>
+          <h1 class="title-slide" :class="{'appear': isActive}">Title Slide</h1>
+        </div>
+      </swiper-slide>
     </swiper>
+    <About></About>
   </div>
 </template>
 
 <script>
 
 import Promotions from '@/components/HomeSection/PromotionBanner.vue'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import About from '@/components/AboutSection/About.vue'
+import { Navigation, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue/swiper-vue';
  import 'swiper/swiper-bundle.css';
 export default {
@@ -35,7 +64,8 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    Promotions
+    Promotions,
+    About
   },
   setup() {
       const onSwiper = (swiper) => {
@@ -47,31 +77,36 @@ export default {
       return {
         onSwiper,
         onSlideChange,
-        modules: [Navigation, Pagination, Scrollbar, A11y],
+        modules: [Navigation, A11y, Autoplay],
       };
     },
 }
 </script>
 
-<style scoped>
+<style>
+
 .home{
   width: 100%;
   height: 100vh;
+  max-width: 100vw;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0;padding: 0;
 }
 .prom-banner{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  max-height: 30px;
+  max-height: 40px;
   height: 100%;
+  background-color: #574A61;
+  color: white;
 }
 .home-swiper{
-  height: 90vh;
-  padding: 20px;
-  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+}
+.home .swiper .swiper-wrapper .swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .content-slide{
   display: block;
@@ -86,11 +121,12 @@ export default {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 96%;
     background-image: linear-gradient(to left bottom, #ffffff, #e3e3e3, #c8c8c8, #adadad, #939393);
     opacity: 0.35;
     z-index: 11;
+    margin: auto;
 }
 
 .content-slide figure{
@@ -98,7 +134,6 @@ export default {
   height: 100%;
   position: relative;
   margin: 0;
-  background-color: red;
 }
 .content-slide figure img{
   position: absolute;
@@ -106,19 +141,71 @@ export default {
   left: 0;
   bottom: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 96%;
+  margin: auto;
   object-fit: cover;
 }
 .content-slide .title-slide{
   position: absolute;
   right: 10%;
-  bottom: 10%;
+  bottom: 0;
   z-index: 5;
   color: white;
-  font-size: 80px;
+  font-size: 130px;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+  text-decoration: underline;
 }
-.home-swiper .swiper-button-next{
-  left: 95%;
+.content-slide .title-slide.appear{
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.home .swiper .swiper-button-next, .home .swiper .swiper-button-prev{
+  width: 42px;
+  height: 68px;
+  background-color: #795548;
+  color: white;
+  transform: skewX(10deg);
+  top: 85%;
+}
+.home .swiper .swiper-button-next{
+  left: 5%;
+}
+.home .swiper .swiper-button-prev{
+  left: 3%;
+}
+.home .swiper .swiper-button-next::after, .home .swiper .swiper-button-prev::after{
+  font-size: 32px;
+}
+.home .swiper .swiper-button-next.swiper-button-disabled, .home .swiper .swiper-button-prev.swiper-button-disabled{
+  height: 52px;
+  top: 91.7%;
+}
+
+@media only screen and (max-width: 576px) {
+  .home .swiper .swiper-button-next, .home .swiper .swiper-button-prev{
+    top: 90%;
+  }
+  .home .swiper .swiper-button-next{
+    left: 20%;
+  }
+  .home .swiper .swiper-button-prev{
+    left: 10%;
+  }
+  .home .swiper .swiper-button-next.swiper-button-disabled, .home .swiper .swiper-button-prev.swiper-button-disabled{
+    top: 92%;
+  }
+  .home-swiper{
+    height: 90vh;
+  }
+  .content-slide .title-slide{
+    right: 8%;
+    transform: translateX(50%);
+    font-size: 75px;
+    bottom: 20%;
+  }
 }
 </style>
