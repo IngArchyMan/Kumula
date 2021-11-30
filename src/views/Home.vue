@@ -49,23 +49,26 @@
       </swiper-slide>
     </swiper>
     <About></About>
+    <Services></Services>
   </div>
 </template>
 
 <script>
 
-import Promotions from '@/components/HomeSection/PromotionBanner.vue'
-import About from '@/components/AboutSection/About.vue'
+import Promotions from '@/components/Home/PromotionBanner.vue'
+import About from '@/components/Home/AboutSection.vue'
+import Services from '@/components/Home/ServicesSection.vue'
 import { Navigation, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue/swiper-vue';
- import 'swiper/swiper-bundle.css';
+import 'swiper/swiper-bundle.css';
 export default {
   name: 'Home',
   components: {
     Swiper,
     SwiperSlide,
     Promotions,
-    About
+    About,
+    Services
   },
   setup() {
       const onSwiper = (swiper) => {
