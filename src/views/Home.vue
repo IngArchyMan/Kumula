@@ -125,7 +125,7 @@ export default {
     bottom: 0;
     right: 0;
     width: 99%;
-    height: 96%;
+    height: 98%;
     background-image: linear-gradient(to left bottom, #ffffff, #e3e3e3, #c8c8c8, #adadad, #939393);
     opacity: 0.35;
     z-index: 11;
@@ -144,15 +144,17 @@ export default {
   left: 0;
   bottom: 0;
   right: 0;
-  width: 99%;
-  height: 96%;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
   margin: auto;
   object-fit: cover;
 }
 .content-slide .title-slide{
+  margin: 0;
   position: absolute;
   right: 10%;
-  bottom: 0;
+  bottom: 10%;
   z-index: 5;
   color: white;
   font-size: 130px;

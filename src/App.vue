@@ -5,7 +5,13 @@
   </div>
   <router-view/>
 </template>
-
+<script>
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@/assets/css/_custom.css'
+export default {
+  
+}
+</script>
 <style>
 body{
   margin: 0;

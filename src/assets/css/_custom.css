@@ -1,0 +1,62 @@
+p{
+    margin-bottom: 0;
+}
+
+.btn-action-section{
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 0.55rem 0;
+    border-radius: 10px;  
+    cursor: pointer;  
+    transition: 300ms all ease-in-out;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn-action-section.prp-btn{
+    background-color: white;    
+    border: 1px solid black;
+}
+.btn-action-section.prp-btn:hover{   
+    background-color: gray;   
+    color: white; 
+}
+.btn-action-section.snd-btn{
+    border: none;
+    background-color: transparent;
+}
+.btn-action-section.snd-btn:hover{
+    opacity: 0.25;
+}
+
+.tile-on-section{
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    display: block;
+    z-index: 10;
+    color: white;
+    text-shadow: rgb(16, 16, 16) 2px 0px 0px, rgb(16, 16, 16) 1.75517px 0.958851px 0px, rgb(16, 16, 16) 1.0806px 1.68294px 0px, rgb(16, 16, 16) 0.141474px 1.99499px 0px, rgb(16, 16, 16) -0.832294px 1.81859px 0px, rgb(16, 16, 16) -1.60229px 1.19694px 0px, rgb(16, 16, 16) -1.97998px 0.28224px 0px, rgb(16, 16, 16) -1.87291px -0.701566px 0px, rgb(16, 16, 16) -1.30729px -1.5136px 0px, rgb(16, 16, 16) -0.421592px -1.95506px 0px, rgb(16, 16, 16) 0.567324px -1.91785px 0px, rgb(16, 16, 16) 1.41734px -1.41108px 0px, rgb(16, 16, 16) 1.92034px -0.558831px 0px;
+    margin: 0;
+}
+
+.subtile-on-section{
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+}
+
+.subtile-on-section::after{
+    position: absolute;
+    top: 55%;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 500px;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto;
+}

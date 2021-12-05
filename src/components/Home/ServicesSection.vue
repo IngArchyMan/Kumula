@@ -14,17 +14,148 @@
                             </figure>                            
                         </div>
                         <p class="tile-on-section">Construcción</p>
-                        <p class="subtile-on-section">Subtitle-section</p>
-                        
+                        <p class="subtile-on-section">Subtitle-section</p>                        
                         <div class="on-section-actions">
                             <p class="describe-section">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, excepturi autem debitis adipisci ipsam eos. Eaque similique aspernatur minus aliquid, illo vero, eum optio nemo temporibus explicabo consequatur quod distinctio?</p>
                             <div class="buttons-action-section">
-                                <button class="btn prp-btn showme-more">Ver Proyectos</button>
-                                <button class="btn snd-btn contact-me">Contactar a ventas</button>
+                                <button class="btn btn-action-section prp-btn showme-more">Ver Proyectos</button>
+                                <button class="btn btn-action-section snd-btn contact-me">Contactar a ventas</button>
+                            </div>                            
+                        </div>
+                        <div class="on-section-bonus">
+                            <h3 class="subtitle-section">¿Porque Kumula?</h3>             
+                            <ul class="nav nav-tabs nav-fill nav-justified" id="section-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" active-link="active" id="friendly-tab" data-bs-toggle="tab" data-bs-target="#friendly" type="button" role="tab" aria-controls="friendly" aria-selected="true">
+                                        <span>
+                                            <i class="far fa-handshake"></i>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="ontime-tab" data-bs-toggle="tab" data-bs-target="#ontime" type="button" role="tab" aria-controls="ontime" aria-selected="false">
+                                        <span>
+                                            <i class="fas fa-stopwatch"></i>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="premium-tab" data-bs-toggle="tab" data-bs-target="#premium" type="button" role="tab" aria-controls="premium" aria-selected="false">
+                                        <span>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="indesing-tab" data-bs-toggle="tab" data-bs-target="#indesing" type="button" role="tab" aria-controls="indesing" aria-selected="false">
+                                        <span>
+                                        <i class="fas fa-pencil-ruler"></i>
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="section-tab-content">
+                                <div class="tab-pane fade show active" id="friendly" role="tabpanel" aria-labelledby="friendly-tab">
+                                    <p class="title-pane">Friendly</p>
+                                    <p class="text-pane">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste non dolore est suscipit quibusdam numquam praesentium voluptatem. Voluptate commodi, nesciunt ex repellat magnam expedita eveniet. Doloremque porro accusantium veritatis.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="ontime" role="tabpanel" aria-labelledby="ontime-tab">
+                                    <p class="title-pane">On Time</p>
+                                    <p class="text-pane">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste non dolore est suscipit quibusdam numquam praesentium voluptatem. Voluptate commodi, nesciunt ex repellat magnam expedita eveniet. Doloremque porro accusantium veritatis.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab">
+                                    <p class="title-pane">Premium</p>
+                                    <p class="text-pane">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste non dolore est suscipit quibusdam numquam praesentium voluptatem. Voluptate commodi, nesciunt ex repellat magnam expedita eveniet. Doloremque porro accusantium veritatis.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="indesing" role="tabpanel" aria-labelledby="indesing-tab">
+                                    <p class="title-pane">In Desing</p>
+                                    <p class="text-pane">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste non dolore est suscipit quibusdam numquam praesentium voluptatem. Voluptate commodi, nesciunt ex repellat magnam expedita eveniet. Doloremque porro accusantium veritatis.
+                                    </p>
+                                </div>
                             </div>
-                            
                         </div>
                     </div>
+                    <div class="on-section second-section">
+                       <div class="bg-overlay">
+                            <figure>
+                                <img src="@/assets/img/services-sect-two.jpg" alt="Servicio de BIM Manager">
+                            </figure>                            
+                        </div>
+                        <p class="tile-on-section">Manager</p>
+                        <div class="on-section-actions">
+                            <p class="tile-on-section sec-title">BIM</p>
+                            <p class="subtile-on-section">Subtitle-section</p>   
+                            <div class="buttons-action-section">
+                                <button class="btn btn-action-section prp-btn showme-more">saber más</button>
+                                <button class="btn btn-action-section snd-btn contact-me">Contactar a ventas</button>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="on-section third-section">
+                        <div class="wrapper_section">
+                            <div class="up">
+                                <div class="back-overlay-img">
+                                    <figure>
+                                        <img src="@/assets/img/services-sect-thrid-one.jpg" alt="Design section">
+                                    </figure>                                       
+                                </div>
+                                <div class="context-section">
+                                    <p class="tile-on-section">Diseño</p>
+                                    <p class="subtile-on-section">Subtitle-section</p>
+                                </div>
+                                
+                            </div>
+                            <div class="down">
+                                <div class="front-overlay-img">
+                                    <figure>
+                                        <img src="@/assets/img/services-sect-thrid-two.jpg" alt="Design section">
+                                    </figure>                                   
+                                </div>
+                                 <div class="context-section">
+                                    <p class="text-section">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste non dolore est suscipit quibusdam numquam praesentium voluptatem. Voluptate commodi, nesciunt ex repellat magnam expedita eveniet. Doloremque porro accusantium veritatis.
+                                    </p>
+                                    <div class="buttons-action-section">
+                                        <button class="btn btn-action-section prp-btn showme-more">saber más</button>
+                                        <button class="btn btn-action-section snd-btn contact-me">Contactar a ventas</button>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="on-section fourth-section">
+                        <div class="wrapper_section">
+                            <div class="up">
+                                <div class="context-section">                                    
+                                    <p class="subtile-on-section">Subtitle-section</p>
+                                     <div class="buttons-action-section">
+                                        <button class="btn btn-action-section prp-btn showme-more">saber más</button>
+                                        <button class="btn btn-action-section snd-btn contact-me">Contactar a ventas</button>
+                                    </div>  
+                                </div>     
+                                <p class="text-section">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste non dolore est suscipit quibusdam numquam praesentium voluptatem. Voluptate commodi, nesciunt ex repellat magnam expedita eveniet. Doloremque porro accusantium veritatis.
+                                </p>                           
+                            </div>
+                            <div class="down">
+                                <div class="overlay-img">                                                                 
+                                </div>
+                                <p class="tile-on-section">AGROFORESTAL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="botoom">
+                <div class="wrapper_bottom">      
+  
                 </div>
             </div>
         </div>
@@ -87,52 +218,26 @@ export default {
     justify-content: flex-end;
     flex-direction: column;
 }
-.bg-overlay{
+.first-section .bg-overlay{
     width: 100%;
     height: 100vh;
 }
-.bg-overlay figure{
+.first-section .bg-overlay figure{
     display: block;
     overflow: hidden;
     outline: none;
     width: 100%;
     height: 100%;
 }
-.bg-overlay figure img{
+.first-section .bg-overlay figure img{
     object-fit: cover;
     object-position: center;
     width: 70%;
 }
-.tile-on-section{
-    font-size: 100px;
-    font-weight: 900;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    display: block;
-    z-index: 10;
-    color: white;
-    text-shadow: rgb(16, 16, 16) 2px 0px 0px, rgb(16, 16, 16) 1.75517px 0.958851px 0px, rgb(16, 16, 16) 1.0806px 1.68294px 0px, rgb(16, 16, 16) 0.141474px 1.99499px 0px, rgb(16, 16, 16) -0.832294px 1.81859px 0px, rgb(16, 16, 16) -1.60229px 1.19694px 0px, rgb(16, 16, 16) -1.97998px 0.28224px 0px, rgb(16, 16, 16) -1.87291px -0.701566px 0px, rgb(16, 16, 16) -1.30729px -1.5136px 0px, rgb(16, 16, 16) -0.421592px -1.95506px 0px, rgb(16, 16, 16) 0.567324px -1.91785px 0px, rgb(16, 16, 16) 1.41734px -1.41108px 0px, rgb(16, 16, 16) 1.92034px -0.558831px 0px;
-    margin: 0;
-    margin-top: -4rem;
+.first-section .tile-on-section{
+    margin-top: -5rem;
 }
-.subtile-on-section{
-    font-size: 60px;
-    font-weight: 600;
-    position: relative;
-    margin: 0;
-}
-.subtile-on-section::after{
-    position: absolute;
-    top: 55%;
-    left: 0;
-    right: 0;
-    content: "";
-    width: 500px;
-    height: 3px;
-    background-color: black;
-    margin: 0 auto;
-}
-.on-section-actions{
+.first-section .on-section-actions{
     width: 70%;
     height: fit-content;
     margin: 2rem auto;
@@ -140,18 +245,140 @@ export default {
     justify-content: stretch;
     align-items: center;
 }
-.describe-section{
+.first-section .describe-section{
     width: 70%;
     line-height: 2rem;
     font-size: 24px;
 }
-.buttons-action-section{
+.first-section .buttons-action-section{
     width: 30%;
 }
-.buttons-action-section .btn{
+.on-section-bonus{
+    width: 100%;
+    height: fit-content;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.on-section-bonus .subtitle-section{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
     display: block;
-    margin: 10px auto;
-    width: 80%;
+    margin: 0;
+}
+.nav-tabs{
+    width: 70%;
+    margin: 2rem auto;
+    justify-content: center;
+    border: none;
+}
+.nav-item{
+    max-width: 10rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.nav-link, .nav-link:hover{
+    border: none;
+}
+.nav-link.active{
+    border: none;
+}
+.nav-item span{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    display: block;
+    padding: 2rem 0;
+    color: white;
+    border-radius: 20px;
+}
+.nav-link.active span{
+    opacity: 0.5;
+    color: black;
+}
+.nav-item span i{
+    font-size: 32px;
+}
+.tab-content{
+    max-width: 50%;
+}
+.tab-pane .title-pane{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.tab-pane .text-pane{
+    font-size: 24px;
+    line-height: 2rem;
+}
+.second-section{
+    width: 100%;
+    position: relative;
+}
+
+.second-section .bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 40vw;
+    height: 80vh;
+    margin: 1rem 7rem;
+    z-index: -1;
+}
+.second-section .bg-overlay figure{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: none;
+    position: relative;
+}
+.second-section .bg-overlay figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 40px;
+    filter: grayscale(5);
+}
+.second-section .tile-on-section{
+    font-size: 150px;
+}
+.second-section .on-section-actions{
+    width: 100%;
+    max-width: 53%;
+    margin-left: auto;
+}
+.second-section .on-section-actions .sec-title{
+    display: block;
+    margin-top: -7rem;
+    text-align: start;
+    font-size: 230px;
+}
+.second-section .on-section-actions .subtile-on-section{
+    margin: 0;
+    text-align: start;
+    padding-left: 1.5rem;
+}
+.second-section .on-section-actions .subtile-on-section::after{
+    margin: 0;
+
+}
+.second-section .on-section-actions .buttons-action-section{
+    width: 100%;
+    text-align: start;
+    margin-top: 8rem;
+}
+.second-section .on-section-actions .buttons-action-section .btn{
+    display: block;
+    margin: 10px 5px;
+    width: 50%;
     padding: 0.55rem 0;
     border-radius: 10px;  
     cursor: pointer;  
@@ -160,19 +387,105 @@ export default {
     font-weight: bold;
     font-size: 16px;
 }
-.prp-btn{
-    background-color: white;    
-    border: 1px solid black;
+.third-section, .fourth-section{
+    width: 100%;
+    position: relative;
+    margin: 5rem 0;
 }
-.prp-btn:hover{   
-    background-color: gray;   
-    color: white; 
+
+.wrapper_section .up{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.snd-btn{
-    border: none;
-    background-color: transparent;
+
+.wrapper_section .up .back-overlay-img{
+    max-width: 50%;
+    width: 100%;
 }
-.snd-btn:hover{
-    opacity: 0.25;
+.wrapper_section .up .back-overlay-img figure, .wrapper_section .down .front-overlay-img figure{
+    display: block;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    margin-left: auto;
+}
+.wrapper_section .up .back-overlay-img figure img, .wrapper_section .down .front-overlay-img figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px;
+}
+.wrapper_section .up .context-section{
+    max-width: 50%;
+    width: 100%;
+    padding-top: 5rem;
+    padding-left: 2rem;
+}
+.wrapper_section .up .context-section .tile-on-section{
+    font-size: 150px;
+    text-align: start;
+}
+.wrapper_section .up .context-section .subtile-on-section{
+    margin: 0 auto;
+}
+
+.wrapper_section .down{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.wrapper_section .down .front-overlay-img{
+    max-width: 60%;
+    width: 100%;
+}
+.wrapper_section .down .front-overlay-img figure{
+    margin-top: -8rem;
+}
+.wrapper_section .down .context-section{
+    max-width: 40%;
+    width: 100%;
+    padding: 3rem 4rem;
+    text-align: start;
+}
+.wrapper_section .down .context-section .text-section{
+    margin-bottom: 7rem;
+}
+.wrapper_section .down .context-section .btn-action-section{
+    margin: 10px 0;
+}
+.fourth-section{
+    height: 100vh;
+}
+.fourth-section .wrapper_section{
+    height: 100%;
+}
+.fourth-section .wrapper_section .down{
+    align-items: center;
+    height: 50%;
+}
+
+.fourth-section .wrapper_section .down .overlay-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../../assets/img/services-sect-four-one.webp");
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+}
+.fourth-section .wrapper_section .down .tile-on-section{
+    font-size: 150px;
 }
 </style>
